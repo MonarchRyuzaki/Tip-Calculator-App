@@ -1,0 +1,260 @@
+:root {
+    --Strongcyan: rgb(38, 192, 171);
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --Grayishcyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: rgb(197, 228, 231);
+    --Verylightgrayishcyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --Red: hsl(0, 100%, 74%);
+}
+
+body {
+    background-color: var(--Lightgrayishcyan);
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    margin: 50px;
+}
+
+.hide {
+    display: none;
+}
+
+.calculator {
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.form-input,
+.tip-result {
+    margin-top: 15px;
+}
+
+.section-heading {
+    color: var(--Darkgrayishcyan);
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bill-amt {
+    margin-bottom: 25px;
+}
+
+.tip-percent {
+    margin-bottom: 25px;
+}
+
+.head-count {
+    margin-bottom: 25px;
+}
+
+.rating-options {
+    margin-top: 10px;
+}
+
+.bill-container>input,
+.people-container>input {
+    border: none;
+    background-color: rgba(197, 228, 231, 0.3);
+    text-align: right;
+    width: 100%;
+    color: var(--Verydarkcyan);
+}
+
+.input-group-text {
+    background-color: rgba(197, 228, 231, 0.3);
+    border: none;
+}
+
+.error-message {
+    color: red;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label,
+#custom {
+    width: 155px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+
+input[type="radio"]+label {
+    border-radius: 5px;
+    background-color: var(--Verydarkcyan);
+    color: var(--White);
+}
+
+#custom {
+    border-radius: 5px;
+    height: 42px;
+    border: none;
+    background-color: rgba(197, 228, 231, 0.3);
+    color: var(--Verydarkcyan);
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.input-group {
+    border-radius: 5px;
+}
+
+#custom:focus{
+    border: none;
+    background-color: var(--bs-body-bg);
+    border-color: #86b7fe;
+    outline: 0;
+    border: 1px solid var(--Strongcyan);
+    box-shadow: 0 0 0 0.15rem rgba(38, 192, 171);
+}
+
+input[type="radio"]:checked+label {
+    background-color: var(--Strongcyan);
+    color: var(--Verydarkcyan);
+}
+
+.r1,
+.r2 {
+    display: inline;
+}
+
+.tip-result {
+    margin-top: 40px;
+    background-color: var(--Verydarkcyan);
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.res-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+
+.tip {
+    width: 100%;
+    color: white;
+    font-size: 16px;
+}
+
+.person {
+    width: 100%;
+    color: var(--Grayishcyan);
+    font-size: 16px;
+}
+
+.per-head-value,
+.total-value {
+    color: var(--Strongcyan);
+    font-size: 30px;
+}
+
+.submit {
+    border: none;
+    text-transform: uppercase;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background-color: var(--Strongcyan);
+    color: var(--Verydarkcyan);
+}
+
+.submit:hover{
+    opacity: 0.9;
+}
+
+#submit{
+    margin-top: 20px;
+}
+
+
+.warning{
+    border: 1.3px solid red;
+}
+
+@media (min-width: 1200px) {
+    .heading {
+        margin-top: 100px;
+        margin-bottom: 70px;
+    }
+    
+    .calculator {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .rating-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    input[type="radio"]+label,
+    #custom {
+        width: 135px;
+    }
+    
+    .left,
+    .right {
+        width: 500px;
+    }
+
+    .tip-result {
+        margin-top: 0px;
+    }
+    
+    .submit {
+        margin-top: 60px;
+    }
+    
+    .attribution {
+        margin-top: 200px;
+    }
+    
+    .bill-container>input,
+    .people-container>input {
+        max-width: 440px;
+    }
+    
+    .section-heading{
+        width: 92%;
+    }
+
+    .input-group{
+        max-width: 460px;
+    }
+}

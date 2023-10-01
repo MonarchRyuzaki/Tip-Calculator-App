@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./reset.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main>
+    <section class="heading"><img src="./images/logo.svg" alt=""></section>
+    <form action="#">
+      <section class="calculator">
+        <section class="form-input">
+          <section class="left">
+            <section class="bill-amt">
+              <div class="section-heading"><span class="abt">Bill</span><span class="error-message hide">Can't be
+                  zero</span></div>
+              <div class="input-group mb-3 bill-container">
+                <span class="input-group-text"><img src="./images/icon-dollar.svg" alt="" class="logo"></span>
+                <input type="number" name="amt" id="amt" placeholder="0.00" class="form-control" min="0">
+              </div>
+            </section>
+            <div class="tip-percent">
+              <div class="section-heading"><span class="abt">Select Tip %</span><span class="error-message hide">Can't be empty</span></div>
+              <div class="rating-options">
+                <div class="r1">
+                  <input type="radio" name="radioGroup" id="5" value="5">
+                  <label for="5">
+                    <div class="value">5%</div>
+                  </label>
+                  <input type="radio" name="radioGroup" id="10" value="10">
+                  <label for="10">
+                    <div class="value">10%</div>
+                  </label>
+                  <input type="radio" name="radioGroup" id="15" value="15">
+                  <label for="15">
+                    <div class="value">15%</div>
+                  </label>
+                </div>
+                <div class="r2">
+                  <input type="radio" name="radioGroup" id="25" value="25">
+                  <label for="25">
+                    <div class="value">25%</div>
+                  </label>
+                  <input type="radio" name="radioGroup" id="50" value="50">
+                  <label for="50">
+                    <div class="value">50%</div>
+                  </label>
+                  <input type="number" name="radioGroup" id="custom" placeholder="Custom" min="0">
+                </div>
+              </div>
+            </div>
+            <section class="head-count">
+              <div class="section-heading" for="num "><span class="abt" min="0">Number of People</span><span
+                  class="error-message hide">Can't be Zero</span></div>
+              <div class="input-group mb-3 people-container">
+                <span class="input-group-text"><img src="./images/icon-person.svg" alt="" class="logo"></span>
+                <input type="number" name="amt" id="num" placeholder="0" class="form-control">
+              </div>
+            </section>
+          </section>
+        </section>
+        <section class="right">
+          <section class="tip-result">
+            <div class="res-container">
+              <div class="wrap">
+                <div class="tip">Tip Amount</div>
+                <div class="person">/ person</div>
+              </div>
+              <span class="per-head-value">&dollar; <span class = "phv">0.00</span></span>
+            </div>
+            <div class="res-container">
+              <div class="wrap">
+                <div class="tip">Total</div>
+                <div class="person">/ person</div>
+              </div>
+              <span class="total-value">&dollar; <span class="val">0.00</span></span>
+            </div>
+            <button class="submit" type="submit" id="reset">reset</button>
+            <button class="submit" type="submit" id="submit">submit</button>
+          </section>
+        </section>
+      </section>
+    </form>
+  </main>
+  <footer>  
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Shivam Ganguly</a>.
+    </p>
+  </footer>
+  <script src="./app.js"></script>
+</body>
+
+</html>
