@@ -104,8 +104,8 @@ form.addEventListener('submit', (e) => {
         if (formElementsArray[6].value){
             tipP = parseInt(formElementsArray[6].value); 
         }
-        total.innerText = (bill*tipP)/100;
-        perPerson.innerText = total.innerText/ppl;
+        total.innerText = ((bill*tipP)/100).toFixed(2);
+        perPerson.innerText = (total.innerText/ppl).toFixed(2);
         arr[0].disabled = true;
         arr[1].disabled = true;
     }
