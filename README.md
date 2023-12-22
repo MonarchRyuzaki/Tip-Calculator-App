@@ -30,7 +30,6 @@ Users should be able to:
 ![desktop](image/desktop.png)
 ![mobile](image/mob.png)
 
-
 ### Links
 
 - Solution URL: [Github](https://github.com/MonarchRyuzaki/Tip-Calculator-App)
@@ -40,22 +39,28 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
-- DOM Manipulation
+* Semantic HTML5 markup
+* Utilization of CSS custom properties
+* Responsive design achieved through Flexbox
+* Adhering to a mobile-first workflow
+* DOM manipulation for dynamic content
 
 ### What I learned
 
-1. Learnt about input groups and styling input groups as a whole when the field is selected
-2. Management of Lots of Elements
-3. More Practice on positioning of elements
-4. Lots of DOM stuff
+During the development of this project, I acquired valuable insights and skills, including:
+
+* Understanding and styling input groups as cohesive units when selected
+* Efficient management of a large number of elements
+* Enhanced proficiency in positioning elements within the layout
+* In-depth experience with DOM manipulation techniques
+* Continued practice and learning in the realm of frontend development
 
 ### Continued development
 
-Get More Experience with DOM stuff and APIs 
+Moving forward, my focus is on:
+
+* Gaining more experience with advanced DOM manipulation
+* Exploring and working with APIs to broaden my skill set
 
 ## Author
 
@@ -64,4 +69,4 @@ Get More Experience with DOM stuff and APIs
 
 ## Acknowledgments
 
-Special Thanks to [Colt Steele](https://www.udemy.com/user/coltsteele/) for his [Web Development Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/).
+Special thanks to Colt Steele for his inspiring Web Development Bootcamp, which provided valuable insights and guidance throughout the learning process.
